@@ -1,99 +1,99 @@
-﻿# NYC-Airbnb-Neighbourhood-Value-Analysis
-Project Overview
+#🏙️ NYC Airbnb Neighbourhood Value Analysis
+📌 Project Overview
 
-This project analyzes Airbnb listings in New York City to find undervalued and overpriced neighbourhoods.
-The goal is to help understand where people get better value for money based on price, availability, and demand.
+This project analyzes Airbnb listings in New York City to identify undervalued 🟢 and overpriced 🔴 neighbourhoods.
+The goal is to understand where people get better value for money 💰 using data.
 
-Objective
+🎯 Objective
 
-To identify neighbourhoods that offer:
+To find neighbourhoods that offer:
 
-Better value (lower price with higher demand and availability)
+✅ Better value (lower price + higher demand)
 
-Poor value (high price without matching demand)
+❌ Poor value (high price without matching demand)
 
-Dataset
+📊 Dataset
 
-Source: NYC Airbnb Open Data (Kaggle)
-Total Listings: ~48,000
+📍 Source: NYC Airbnb Open Data (Kaggle)
+📦 Size: ~48,000 listings
 
-Key Columns Used
+🔑 Key Data Used
 
-Price per night
+💵 Price per night
 
-Availability (days per year)
+📅 Availability (days per year)
 
-Number of reviews (used as demand indicator)
+⭐ Number of reviews (demand indicator)
 
-Neighbourhood and borough
+🏘️ Neighbourhood & borough
 
-What Was Done in This Project
-1. Data Cleaning
+🧹 Data Cleaning
 
-Removed duplicate records
+✔ Removed duplicate listings
+✔ Removed invalid prices
+✔ Handled missing values
 
-Removed listings with invalid prices
+🛠 Feature Engineering
 
-Handled missing values
+Created neighbourhood-level metrics:
 
-2. Feature Creation
+📈 Average price
 
-Average price per neighbourhood
+📆 Average availability
 
-Average availability
+🔥 Reviews per listing (popularity)
 
-Reviews per listing (used as popularity measure)
+📐 Value Score Formula
 
-3. Value Score Calculation
-
-A Value Score was created to compare neighbourhoods:
+To compare neighbourhoods fairly, a Value Score was created:
 
 Value Score = (Availability × Popularity) / Price
 
-Higher score → Better value for money
+🔹 High score → 🟢 Good value
+🔹 Low score → 🔴 Potentially overpriced
 
-Lower score → Potentially overpriced
-
-4. Visual Analysis
+📈 Visualizations
 
 The project includes:
 
-Heatmap comparing value across boroughs
+🗺️ Heatmap (borough vs value score)
 
-Price vs availability scatter plot
+📉 Price vs availability scatter plot
 
-Top 10 undervalued neighbourhoods bar chart
+🏆 Top 10 undervalued neighbourhoods bar chart
 
-Key Findings
+🖥️ Interactive Streamlit dashboard
 
-Brooklyn and Queens are generally undervalued
+🔍 Key Findings
 
-Central Manhattan areas tend to be overpriced
+🟢 Undervalued Areas
 
-High prices do not always mean high demand
+Brooklyn
 
-Tools Used
+Queens
 
-Python
+🔴 Overpriced Areas
 
-Pandas
+Central Manhattan
 
-Matplotlib & Seaborn
+📌 High prices do not always mean high demand.
 
-Streamlit (for dashboard)
+🧰 Tools Used
 
-How to Run the Project
-pip install streamlit pandas matplotlib seaborn
-streamlit run app.py
+🐍 Python
 
-Conclusion
+📊 Pandas
+
+📉 Matplotlib & Seaborn
+
+🚀 Streamlit
+
+✅ Conclusion
 
 This project shows how data can be used to:
 
-Compare areas fairly
+📊 Compare neighbourhoods objectively
 
-Create useful performance metrics
+🧠 Create meaningful performance metrics
 
-Support data-driven decision making
-
-It also reflects skills used in digital back-office and analytics roles.
+💼 Support data-driven decisions
